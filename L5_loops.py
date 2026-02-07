@@ -44,8 +44,8 @@
 #     print(number)
 
 
-# the continue keyword is almost identical to the break except that it skips the conditional that will be satisfied 
-number = 6
+# # the continue keyword is almost identical to the break except that it skips the conditional that will be satisfied 
+# number = 6
 
 # while number > 0:
 #     number -= 1
@@ -53,10 +53,31 @@ number = 6
 #         continue
 #     print(number)
 
+# # an example of continue
+# cars = ["Toyota", "Vibe", "Acura", "Lexus"]
 
-cars = ["Toyota", "Vibe", "Acura", "Lexus"]
+# for car in cars:
+#     if car == "Vibe":
+#         continue
+#     print(car)
 
-for car in cars:
-    if car == "Vibe":
-        continue
-    print(car)
+
+# the use of the else clause in a break statement
+import random
+import time
+
+MAX_RETRIES = 5
+attempts = 0
+
+while attempts < MAX_RETRIES:
+    attempts += 1
+    print(f"Attempt {attempts}: Connecting to the server...")
+    # Simulating a connection scenario
+    time.sleep(0.3)
+    if random.choice([True]):
+    # if random.choice([False, False, False, True]):
+        print("Connection successful!")
+        break
+    print("Connection failed. Retrying...")
+else:
+    print("All attempts failed. Unable to connect.")
