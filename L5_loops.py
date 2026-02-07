@@ -34,13 +34,21 @@
 #     number -= 2
 
 
-# the use of the break keyword
+# # the use of the break enables the user to terminate the current loop and continue with the first block of code after the loop
+# number = 6
+
+# while number > 0:
+#     number -= 1
+#     if number == 2:
+#         break
+#     print(number)
+
+
+# the continue keyword is almost identical to the break except that it skips the conditional that will be satisfied 
 number = 6
 
 while number > 0:
     number -= 1
-    if number == 2:
-        break
+    if number == 2: #here 2 is skipped because the condition set has been matched successfully 
+        continue
     print(number)
-
-print("Loop ended")
