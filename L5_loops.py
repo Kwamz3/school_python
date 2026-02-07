@@ -62,22 +62,22 @@
 #     print(car)
 
 
-# the use of the else clause in a break statement
-import random
-import time
+# # the use of the else clause in a break statement
+# import random
+# import time
 
-MAX_RETRIES = 5
-attempts = 0
+# MAX_RETRIES = 5
+# attempts = 0
 
-while attempts < MAX_RETRIES:
-    attempts += 1
-    print(f"Attempt {attempts}: Connecting to the server...")
-    # Simulating a connection scenario
-    time.sleep(0.3)
-    if random.choice([True]):
-    # if random.choice([False, False, False, True]):
-        print("Connection successful!")
-        break
-    print("Connection failed. Retrying...")
-else:
-    print("All attempts failed. Unable to connect.")
+# while attempts < MAX_RETRIES:
+#     attempts += 1
+#     print(f"Attempt {attempts}: Connecting to the server...")
+#     # Simulating a connection scenario
+#     time.sleep(0.3)
+#     if random.choice([True]):
+#     # if random.choice([False, False, False, True]):
+#         print("Connection successful!")
+#         break
+#     print("Connection failed. Retrying...")
+# else:   #we can see that the else clause is being used as a last resort when all attempts fail and the break block doesn't execute
+#     print("All attempts failed. Unable to connect.")
